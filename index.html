@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LeadPilot — Never Miss a Cleaning Lead Again</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+    * { font-family: 'Inter', sans-serif; }
+    .gradient-hero { background: linear-gradient(135deg, #0f2744 0%, #1B4F8A 100%); }
+    .orange-btn { background: #F97316; transition: background 0.2s; }
+    .orange-btn:hover { background: #EA6A0A; }
+    .step-line::after { content: ''; position: absolute; top: 24px; left: calc(50% + 32px); width: calc(100% - 64px); height: 2px; background: #E5E7EB; }
+    @keyframes fadeUp { from { opacity:0; transform:translateY(24px); } to { opacity:1; transform:translateY(0); } }
+    .fade-up { animation: fadeUp 0.6s ease forwards; }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- NAV -->
+  <nav class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur border-b border-gray-100 shadow-sm">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-lg bg-[#1B4F8A] flex items-center justify-center">
+          <span class="text-white font-black text-sm">L</span>
+        </div>
+        <span class="font-black text-[#1B4F8A] text-lg tracking-tight">LeadPilot</span>
+      </div>
+      <a href="#pricing" class="orange-btn text-white font-semibold px-5 py-2.5 rounded-xl text-sm shadow-lg shadow-orange-500/25">
+        Get Started →
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="gradient-hero pt-28 pb-20 px-6 text-white text-center">
+    <div class="max-w-4xl mx-auto fade-up">
+      <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 text-sm font-medium mb-6">
+        🤖 AI Voice Agent for Home Service Businesses
+      </div>
+      <h1 class="text-4xl md:text-6xl font-black leading-tight mb-6">
+        Stop Losing Cleaning Leads<br />
+        <span class="text-orange-400">While You're On the Job</span>
+      </h1>
+      <p class="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto mb-10">
+        LeadPilot's AI agent <strong class="text-white">calls your Thumbtack leads in seconds</strong>,
+        schedules the estimate automatically, and sends you the details —
+        even while you're cleaning.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#pricing" class="orange-btn text-white font-bold px-8 py-4 rounded-2xl text-lg shadow-2xl shadow-orange-500/30">
+          Start Capturing Leads →
+        </a>
+        <a href="#how-it-works" class="bg-white/10 border border-white/25 text-white font-semibold px-8 py-4 rounded-2xl text-lg hover:bg-white/20 transition">
+          See How It Works
+        </a>
+      </div>
+      <!-- Stats bar -->
+      <div class="mt-16 grid grid-cols-3 gap-6 max-w-2xl mx-auto border-t border-white/20 pt-10">
+        <div>
+          <p class="text-3xl font-black text-orange-400">~5s</p>
+          <p class="text-sm text-blue-200 mt-1">Response time after lead submits</p>
+        </div>
+        <div>
+          <p class="text-3xl font-black text-orange-400">24/7</p>
+          <p class="text-sm text-blue-200 mt-1">No leads missed ever again</p>
+        </div>
+        <div>
+          <p class="text-3xl font-black text-orange-400">100%</p>
+          <p class="text-sm text-blue-200 mt-1">Automated — no work from you</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAIN SECTION -->
+  <section class="bg-gray-50 py-20 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-4">
+        Sound Familiar? 😓
+      </h2>
+      <p class="text-gray-500 text-lg mb-12">Every house cleaner loses leads the same way.</p>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl p-6 border border-red-100 shadow-sm text-left">
+          <div class="text-3xl mb-3">📵</div>
+          <h3 class="font-bold text-gray-900 mb-2">Phone rings while cleaning</h3>
+          <p class="text-gray-500 text-sm">You can't answer with wet gloves. By the time you call back, they already hired someone else.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 border border-red-100 shadow-sm text-left">
+          <div class="text-3xl mb-3">⏳</div>
+          <h3 class="font-bold text-gray-900 mb-2">Leads go cold in minutes</h3>
+          <p class="text-gray-500 text-sm">On Thumbtack, the first business to respond wins. Waiting even 30 minutes kills your chances.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 border border-red-100 shadow-sm text-left">
+          <div class="text-3xl mb-3">😩</div>
+          <h3 class="font-bold text-gray-900 mb-2">Juggling jobs + follow-ups</h3>
+          <p class="text-gray-500 text-sm">You're already exhausted. Chasing leads after a full day of cleaning isn't sustainable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how-it-works" class="py-20 px-6 bg-white">
+    <div class="max-w-5xl mx-auto text-center">
+      <div class="inline-flex items-center gap-2 bg-blue-50 text-[#1B4F8A] rounded-full px-4 py-1.5 text-sm font-semibold mb-4">
+        How It Works
+      </div>
+      <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-4">
+        3 Steps. Fully Automatic.
+      </h2>
+      <p class="text-gray-500 text-lg mb-16 max-w-xl mx-auto">
+        Set it up once. LeadPilot handles every lead from that point on.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-10 relative">
+        <div class="flex flex-col items-center text-center">
+          <div class="w-14 h-14 rounded-2xl bg-[#1B4F8A] flex items-center justify-center text-white text-xl font-black mb-4 shadow-lg shadow-blue-900/20">1</div>
+          <div class="text-4xl mb-3">📲</div>
+          <h3 class="font-bold text-gray-900 text-lg mb-2">Lead submits on Thumbtack</h3>
+          <p class="text-gray-500 text-sm">A homeowner requests a house cleaning quote. LeadPilot receives the notification instantly.</p>
+        </div>
+        <div class="flex flex-col items-center text-center">
+          <div class="w-14 h-14 rounded-2xl bg-orange-500 flex items-center justify-center text-white text-xl font-black mb-4 shadow-lg shadow-orange-500/20">2</div>
+          <div class="text-4xl mb-3">🤖</div>
+          <h3 class="font-bold text-gray-900 text-lg mb-2">Lexy calls them in seconds</h3>
+          <p class="text-gray-500 text-sm">Our AI agent Lexy calls the lead, introduces your business, and schedules a free estimate — in fluent English.</p>
+        </div>
+        <div class="flex flex-col items-center text-center">
+          <div class="w-14 h-14 rounded-2xl bg-green-600 flex items-center justify-center text-white text-xl font-black mb-4 shadow-lg shadow-green-600/20">3</div>
+          <div class="text-4xl mb-3">✅</div>
+          <h3 class="font-bold text-gray-900 text-lg mb-2">You get the alert</h3>
+          <p class="text-gray-500 text-sm">You receive a text with the lead's name, address, and scheduled date. Just show up and close the job.</p>
+        </div>
+      </div>
+
+      <!-- Conversation example -->
+      <div class="mt-16 bg-gray-50 rounded-3xl p-8 max-w-lg mx-auto text-left border border-gray-100">
+        <p class="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-4">Example — Real conversation</p>
+        <div class="space-y-3">
+          <div class="flex justify-start">
+            <div class="bg-[#1B4F8A] text-white rounded-2xl rounded-tl-sm px-4 py-3 text-sm max-w-xs shadow">
+              Hi! I'm Lexy, the virtual scheduling assistant for <em>Sparkle Clean</em>. I'm here to help schedule your free estimate. What's your first name?
+            </div>
+          </div>
+          <div class="flex justify-end">
+            <div class="bg-white border border-gray-200 rounded-2xl rounded-tr-sm px-4 py-3 text-sm max-w-xs shadow">
+              Sarah
+            </div>
+          </div>
+          <div class="flex justify-start">
+            <div class="bg-[#1B4F8A] text-white rounded-2xl rounded-tl-sm px-4 py-3 text-sm max-w-xs shadow">
+              Great, Sarah! What day works best for your free estimate this week or next?
+            </div>
+          </div>
+          <div class="flex justify-end">
+            <div class="bg-white border border-gray-200 rounded-2xl rounded-tr-sm px-4 py-3 text-sm max-w-xs shadow">
+              Friday morning works
+            </div>
+          </div>
+          <div class="flex justify-start">
+            <div class="bg-[#1B4F8A] text-white rounded-2xl rounded-tl-sm px-4 py-3 text-sm max-w-xs shadow">
+              Perfect! Last step — what's your address?
+            </div>
+          </div>
+        </div>
+        <p class="text-xs text-gray-400 mt-4 text-center">Sarah booked. You get a text. You were cleaning the whole time. ✨</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="bg-[#0f2744] py-20 px-6 text-white">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-14">
+        <h2 class="text-3xl md:text-4xl font-black mb-4">Everything You Get</h2>
+        <p class="text-blue-200 text-lg">One system. Zero missed leads.</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-5">
+        <div class="flex items-start gap-4 bg-white/5 border border-white/10 rounded-2xl p-5">
+          <span class="text-2xl">📞</span>
+          <div>
+            <h3 class="font-bold mb-1">AI Voice Agent (Lexy)</h3>
+            <p class="text-blue-200 text-sm">Calls leads in seconds with a natural, professional voice. Collects name, service, date, and address.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4 bg-white/5 border border-white/10 rounded-2xl p-5">
+          <span class="text-2xl">💬</span>
+          <div>
+            <h3 class="font-bold mb-1">SMS Follow-up</h3>
+            <p class="text-blue-200 text-sm">If the lead doesn't answer, Lexy sends a personalized text automatically. No lead left behind.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4 bg-white/5 border border-white/10 rounded-2xl p-5">
+          <span class="text-2xl">📊</span>
+          <div>
+            <h3 class="font-bold mb-1">Lead Dashboard</h3>
+            <p class="text-blue-200 text-sm">See all your leads, status, and scheduled visits in one clean dashboard. Access from any device.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4 bg-white/5 border border-white/10 rounded-2xl p-5">
+          <span class="text-2xl">🔔</span>
+          <div>
+            <h3 class="font-bold mb-1">Instant Alerts</h3>
+            <p class="text-blue-200 text-sm">Text message alert every time a new lead comes in — with their name, phone, and what they need.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4 bg-white/5 border border-white/10 rounded-2xl p-5">
+          <span class="text-2xl">🔗</span>
+          <div>
+            <h3 class="font-bold mb-1">Thumbtack Integration</h3>
+            <p class="text-blue-200 text-sm">Connects directly to your Thumbtack profile. Every new quote request triggers Lexy automatically.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4 bg-white/5 border border-white/10 rounded-2xl p-5">
+          <span class="text-2xl">👤</span>
+          <div>
+            <h3 class="font-bold mb-1">Human Handoff</h3>
+            <p class="text-blue-200 text-sm">Lead wants to talk to a real person? Lexy detects it and notifies you immediately to call them back.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF -->
+  <section class="bg-gray-50 py-16 px-6">
+    <div class="max-w-2xl mx-auto text-center">
+      <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
+        <div class="flex justify-center mb-4">
+          <span class="text-yellow-400 text-2xl">★★★★★</span>
+        </div>
+        <blockquote class="text-gray-700 text-lg font-medium mb-6">
+          "Before LeadPilot, I was losing leads every day just because I couldn't answer my phone while cleaning. Now Lexy handles everything — I just check my dashboard and show up to the estimates."
+        </blockquote>
+        <div class="flex items-center justify-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-[#1B4F8A] flex items-center justify-center text-white font-bold">R</div>
+          <div class="text-left">
+            <p class="font-semibold text-gray-900 text-sm">Rodrigo M.</p>
+            <p class="text-gray-400 text-xs">Home Services Contractor · Florida</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="py-20 px-6 bg-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <div class="inline-flex items-center gap-2 bg-orange-50 text-orange-600 rounded-full px-4 py-1.5 text-sm font-semibold mb-4">
+        Simple Pricing
+      </div>
+      <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-4">
+        One Plan. Everything Included.
+      </h2>
+      <p class="text-gray-500 text-lg mb-12">No contracts. Cancel anytime.</p>
+
+      <div class="bg-gradient-to-br from-[#0f2744] to-[#1B4F8A] rounded-3xl p-10 text-white max-w-md mx-auto shadow-2xl shadow-blue-900/30 relative overflow-hidden">
+        <div class="absolute top-4 right-4 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">Most Popular</div>
+        <h3 class="text-xl font-bold mb-2">LeadPilot Pro</h3>
+        <div class="flex items-end gap-1 justify-center my-6">
+          <span class="text-5xl font-black">$127</span>
+          <span class="text-blue-200 mb-2">/month</span>
+        </div>
+        <p class="text-blue-200 text-sm mb-8">+ $247 one-time setup fee</p>
+        <ul class="space-y-3 text-left mb-8">
+          <li class="flex items-center gap-3 text-sm"><span class="text-green-400 font-bold">✓</span> AI Voice Agent (Lexy) — unlimited calls</li>
+          <li class="flex items-center gap-3 text-sm"><span class="text-green-400 font-bold">✓</span> SMS follow-up automation</li>
+          <li class="flex items-center gap-3 text-sm"><span class="text-green-400 font-bold">✓</span> Lead dashboard with full history</li>
+          <li class="flex items-center gap-3 text-sm"><span class="text-green-400 font-bold">✓</span> Thumbtack integration</li>
+          <li class="flex items-center gap-3 text-sm"><span class="text-green-400 font-bold">✓</span> Instant text alerts</li>
+          <li class="flex items-center gap-3 text-sm"><span class="text-green-400 font-bold">✓</span> Dedicated US phone number</li>
+          <li class="flex items-center gap-3 text-sm"><span class="text-green-400 font-bold">✓</span> Full setup & onboarding included</li>
+        </ul>
+        <a href="https://wa.me/15614106714" target="_blank" class="block w-full orange-btn text-white font-bold py-4 rounded-2xl text-center text-lg shadow-xl shadow-orange-500/30">
+          Get Started Today →
+        </a>
+        <p class="text-blue-200 text-xs mt-4 text-center">Questions? WhatsApp us directly</p>
+      </div>
+
+      <p class="text-gray-400 text-sm mt-8">🔒 Secure setup · No contracts · Cancel anytime</p>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="gradient-hero py-20 px-6 text-white text-center">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl md:text-5xl font-black mb-6">
+        Every Unanswered Lead Is<br />
+        <span class="text-orange-400">Money You're Leaving Behind</span>
+      </h2>
+      <p class="text-blue-100 text-lg mb-10 max-w-xl mx-auto">
+        LeadPilot pays for itself with just 1–2 extra jobs per month. Start capturing every lead today.
+      </p>
+      <a href="https://wa.me/15614106714" target="_blank" class="inline-block orange-btn text-white font-bold px-10 py-5 rounded-2xl text-xl shadow-2xl shadow-orange-500/30">
+        Talk to Us on WhatsApp →
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-400 py-8 px-6 text-center text-sm">
+    <div class="flex items-center justify-center gap-2 mb-3">
+      <div class="w-6 h-6 rounded-md bg-[#1B4F8A] flex items-center justify-center">
+        <span class="text-white font-black text-xs">L</span>
+      </div>
+      <span class="text-white font-bold">LeadPilot</span>
+    </div>
+    <p>Powered by <a href="https://contatobtech.com.br" class="text-blue-400 hover:underline">BTech Solutions</a> · AI automation for home service businesses</p>
+    <p class="mt-2">© 2026 BTech Solutions. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
